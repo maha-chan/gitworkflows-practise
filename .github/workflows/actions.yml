@@ -1,0 +1,13 @@
+name: Actions Workflow
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        id: greet
+        run: echo "Nice Start Vishal"
+      - name: Log Greeting Time
+        run: echo "${{ steps.greet.outputs.time }}"
