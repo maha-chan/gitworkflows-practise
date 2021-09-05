@@ -3,13 +3,11 @@ name: Actions Workflow
 on: [push]
 
 jobs:
-  run-github-actions:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Simple Js Action
+      - name: echo a string
         id: greet
-        uses: google-github-actions/gitworkflows-practise@workflow
-        with:
-          who-to-greet: Good start Vishal
+        run: echo "Nice Start Vishal"
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
