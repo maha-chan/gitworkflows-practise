@@ -22,6 +22,6 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v1.0.1
       - name: Simple Js Actions
-        uses: ./.github/actions/my-action
+        uses: maha-chan/gitworkflows-practise@1.0.1
