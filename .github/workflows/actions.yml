@@ -19,3 +19,8 @@ jobs:
       - name: Directory Bash
         run: pwd
         shell: bash
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple Js Actions
+        uses: maha-chan/gitworkflows-practise@1.0.1
