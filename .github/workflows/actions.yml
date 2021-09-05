@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Simple Js Action
         id: greet
-        uses: actions/gitworkflows-practise@workflow
+        uses: google-github-actions/gitworkflows-practise@workflow
         with:
           who-to-greet: Good start Vishal
       - name: Log Greeting Time
