@@ -23,4 +23,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Simple Js Actions
-        uses: maha-chan/gitworkflows-practise
+        uses: maha-chan/gitworkflows-practise@1.0.1
