@@ -11,3 +11,11 @@ jobs:
         run: echo "Nice Start Vishal"
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
